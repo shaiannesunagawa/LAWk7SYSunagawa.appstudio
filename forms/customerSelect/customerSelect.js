@@ -13,7 +13,7 @@ customerSelect.onshow=function(){
         if (req.status == 200) { //transit trip worked. 
             results = JSON.parse(req.responseText)
             if (results.length == 0)    
-               lblMessage.value = "There are no pets in the database."
+               lblMessage.value = "There are no customers in the database."
             else {        
                let message = ""
                for (i = 0; i < results.length; i++)
